@@ -10,4 +10,7 @@ def user_list(request):
     return render(request, 'users.html')
 
 def show_user(request):
-    return render(request, '.html')
+    return render(request, 'index.html')
+
+def testfunction(request):
+    return render(request, 'test.html')

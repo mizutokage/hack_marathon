@@ -1,11 +1,12 @@
 from django.contrib import admin
 from django.urls import path
-from .views import mainfunction, my_page, user_list, show_user
+from .views import mainfunction, my_page, user_list, show_user, testfunction
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('/', mainfunction),
+    path('top/', mainfunction),
     path('mypage/', my_page),
     path('users/', user_list),
-    path('<str:pk>', show_user)
+    path('aaa/', show_user),
+    path('test/', testfunction)
 ]
