@@ -2,12 +2,12 @@ from django.shortcuts import render
 
 def mainfunction(request):
     return render(request, 'base.html')
-<<<<<<< HEAD
-=======
 
-def testfunction(request):
-    return render(request, 'profile.html')
+def my_page(reqeust):
+    return render(reqeust, '.html')
 
-def test1function(request):
-    return render(request, 'test.html')
->>>>>>> 7baf0dce4a0ea4a33394292b51bb8f4256b01695
+def user_list(request):
+    return render(request, 'users.html')
+
+def show_user(request):
+    return render(request, '.html')
